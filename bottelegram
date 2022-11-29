@@ -1,0 +1,65 @@
+Imports Telegram
+Imports Telegram.Bot
+Imports Telegram.Bot.Exceptions
+Imports Telegram.Bot.Polling
+Imports Telegram.Bot.Types
+Imports Telegram.Bot.Types.Enums
+Imports Telegram.Bot.Types.InputFiles
+
+Imports System.Threading
+
+Public Class Form1
+
+	Private botClient As ITelegramBotClient
+
+	Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+		botClient = New TelegramBotClient("BOT TOKEN")
+
+		Debug.Print(String.Format("Bot Name - {0}", botClient.GetMeAsync.Result.FirstName))
+
+		Dim cts = New CancellationTokenSource()
+
+			botClient.StartReceiving(AddressOf HandleUpdateAsync, AddressOf HandleErrorAsync, New ReceiverOptions With {.AllowedUpdates = {}, .ThrowPendingUpdates = True}, cts.Token)
+
+	End Sub
+
+	Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+
+		botClient.CloseAsync
+
+	End Sub
+
+	Private Async Function HandleUpdateAsync(bot As ITelegramBotClient, botupdate As Update, cancellation As CancellationToken) As Task
+
+		Try
+
+			If botupdate.Type = UpdateType.Message Then
+
+				Debug.Print(botupdate.Message.Date.ToLocalTime)
+				Debug.Print(botupdate.Message.Chat.Id)
+
+				If botupdate.Message.Text.ToLower = "/hello" Then
+
+					Await bot.SendTextMessageAsync(botupdate.Message.Chat, "Bot: Hello")
+
+					Return
+
+				End If
+
+				Await bot.SendTextMessageAsync(botupdate.Message.Chat, String.Format("Ehco: {0}", botupdate.Message.Text))
+
+			End If
+
+		Catch ex As Exception
+		End Try
+
+	End Function
+
+	Private Function HandleErrorAsync(botClient As ITelegramBotClient, exception As Exception, cancellationToken As CancellationToken) As Task
+
+		Return Task.CompletedTask
+
+	End Function
+
+End Class
