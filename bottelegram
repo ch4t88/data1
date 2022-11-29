@@ -46,6 +46,8 @@ Public Class Form1
 					Return
 
 				End If
+				
+				RichTextBox1.Invoke(Sub() RichTextBox1.AppendText(botupdate.Message.Text))
 
 				Await bot.SendTextMessageAsync(botupdate.Message.Chat, String.Format("Ehco: {0}", botupdate.Message.Text))
 
