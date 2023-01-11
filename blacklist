@@ -1,1 +1,17 @@
 
+{
+  "dataclone123":
+  {
+    "user":
+    {
+      "id":"welcome123","data123":
+      {
+        "data":[
+          {
+            "username":"AK.RZbot Versi 2.4.6"
+          }
+        ]
+      }
+    }
+  }
+}
