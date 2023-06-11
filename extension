@@ -1,1 +1,29 @@
 
+{
+  "DataUser":
+  {
+    "user":
+    {
+      "id":"hi","Database":
+      {
+        "data":[
+          {
+            "username":"ohmykayes"
+          },{
+            "username":"Rerenet"
+          },{
+            "username":"Ntop22"
+          },{
+            "username":"Beslamet"
+          },{
+            "username":"bijikkuda"
+          },{
+            "username":"stevanie"
+          },{
+            "username":"kendari"
+          }
+        ]
+      }
+    }
+  }
+}
