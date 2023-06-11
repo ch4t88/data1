@@ -1,29 +1,23 @@
 
 {
-  "DataUser":
+  "DATA":
   {
-    "user":
-    {
-      "id":"hi","Database":
-      {
-        "data":[
+        "LIST_ID_Machine":[
           {
-            "username":"xxxxxxxxxxxxxxx"
+            "ID_Machine":"xxxxxxxxxxxxxxx"
           },{
-            "username":"xxxxxxxxxxxxxxx"
+            "ID_Machine":"xxxxxxxxxxxxxxx"
           },{
-            "username":"xxxxxxxxxxxxxxx"
+            "ID_Machine":"xxxxxxxxxxxxxxx"
           },{
-            "username":"xxxxxxxxxxxxxxx"
+            "ID_Machine":"xxxxxxxxxxxxxxx"
           },{
-            "username":"xxxxxxxxxxxxxxx"
+            "ID_Machine":"xxxxxxxxxxxxxxx"
           },{
-            "username":"xxxxxxxxxxxxxxx"
+            "ID_Machine":"xxxxxxxxxxxxxxx"
           },{
-            "username":"xxxxxxxxxxxxxxx"
+            "ID_Machine":"xxxxxxxxxxxxxxx"
           }
         ]
-      }
-    }
   }
 }
