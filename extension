@@ -1,22 +1,22 @@
 
 {
-  "DATA":
+  "data":
   {
-        "LIST_ID_Machine":[
+        "listid":[
           {
-            "ID_Machine":"blohfdnialdpnmfdhffpjhghiapgmmah"
+            "idmachine":"blohfdnialdpnmfdhffpjhghiapgmmah"
           },{
-            "ID_Machine":"xxxxxxxxxxxxxxx"
+            "idmachine":"xxxxxxxxxxxxxxx"
           },{
-            "ID_Machine":"xxxxxxxxxxxxxxx"
+            "idmachine":"xxxxxxxxxxxxxxx"
           },{
-            "ID_Machine":"xxxxxxxxxxxxxxx"
+            "idmachine":"xxxxxxxxxxxxxxx"
           },{
-            "ID_Machine":"xxxxxxxxxxxxxxx"
+            "idmachine":"xxxxxxxxxxxxxxx"
           },{
-            "ID_Machine":"xxxxxxxxxxxxxxx"
+            "idmachine":"xxxxxxxxxxxxxxx"
           },{
-            "ID_Machine":"xxxxxxxxxxxxxxx"
+            "idmachine":"xxxxxxxxxxxxxxx"
           }
         ]
   }
